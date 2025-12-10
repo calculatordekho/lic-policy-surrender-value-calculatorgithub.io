@@ -8,7 +8,7 @@ Live working calculator built with HTML, CSS and JavaScript.
 
 ## Calculator Preview
 
-![YLIC Policy Surrender Value Calculator Preview](images/calculator-preview.jpg)
+![YLIC Policy Surrender Value Calculator Preview](TFJDTHDR.jpg)
 
 ## 🧾 Introduction  
 
