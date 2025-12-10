@@ -1,5 +1,14 @@
-# YLIC Policy Surrender Value Calculator – How to Check Surrender Value Online (Complete Guide 2025)
+# YLIC Policy Surrender Value Calculator
 
+Live working calculator built with HTML, CSS and JavaScript.
+
+🔗 **Live Demo (GitHub Pages):**  
+ https://calculatordekho.github.io/lic-policy-surrender-value-calculatorgithub.io/
+---
+
+## Calculator Preview
+
+![YLIC Policy Surrender Value Calculator Preview](images/calculator-preview.jpg)
 
 ## 🧾 Introduction  
 
