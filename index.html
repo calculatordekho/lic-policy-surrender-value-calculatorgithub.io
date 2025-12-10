@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>YLIC Policy Surrender Value Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="page-wrapper">
+
+    <!-- TOP HEADING -->
+    <header class="page-header">
+      <h1>YLIC Policy Surrender Value Calculator</h1>
+      <p>
+        Enter your policy details below to estimate your
+        <strong>Guaranteed Surrender Value (GSV)</strong>.
+      </p>
+    </header>
+
+    <!-- 🔹 WORKING CALCULATOR SECTION (TOP) -->
+    <section class="calculator-section">
+      <div class="calculator-card">
+        <h2>Calculate Surrender Value</h2>
+
+        <form id="surrenderForm">
+          <div class="grid-2">
+            <div class="form-group">
+              <label for="policyName">Select Policy Name</label>
+              <select id="policyName">
+                <option value="LIC Single Premium Endowment Plan">
+                  LIC's Single Premium Endowment Plan
+                </option>
+                <option value="YLIC Endowment Plan">
+                  YLIC Endowment Plan
+                </option>
+                <option value="YLIC Money Back Plan">
+                  YLIC Money Back Plan
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="sumAssured">Sum Assured (₹)</label>
+              <input
+                type="number"
+                id="sumAssured"
+                value="100000"
+                min="0"
+                step="1000"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="policyTerm">Policy Term (Years)</label>
+              <input
+                type="number"
+                id="policyTerm"
+                value="20"
+                min="1"
+                step="1"
+              />
+              <small>Premium Paying Term is assumed same as Policy Term.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="premiumFrequency">Premium Frequency</label>
+              <select id="premiumFrequency">
+                <option value="annual" selected>Annual</option>
+                <option value="half-yearly">Half-Yearly</option>
+                <option value="quarterly">Quarterly</option>
+                <option value="monthly">Monthly</option>
+                <option value="single">Single Premium</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="annualPremium">Annual Premium Amount (₹)</label>
+              <input
+                type="number"
+                id="annualPremium"
+                value="2500"
+                min="0"
+                step="100"
+              />
+              <small>Enter the total premium amount paid per year.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="yearsPaid">Number of Full Premiums Paid (Years)</label>
+              <input
+                type="number"
+                id="yearsPaid"
+                value="4"
+                min="0"
+                step="1"
+              />
+              <small>How many full years' premiums have you paid?</small>
+            </div>
+          </div>
+
+          <div class="button-row">
+            <button type="button" id="calculateBtn" class="btn primary">
+              Calculate Surrender Value
+            </button>
+            <button type="reset" class="btn secondary" id="resetBtn">
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 🔸 CALCULATION SUMMARY -->
+      <div class="summary-card" id="summaryCard">
+        <h2>Calculation Summary</h2>
+        <div class="summary-row">
+          <span>Total Premiums Paid:</span>
+          <strong id="totalPremiums">₹0</strong>
+        </div>
+        <div class="summary-row">
+          <span>Assumed Premium Paying Term (PPT):</span>
+          <strong id="pptYears">0 Years</strong>
+        </div>
+        <div class="summary-row">
+          <span>Estimated Surrender Factor (Years Paid / PPT):</span>
+          <strong id="surrenderFactor">0.00</strong>
+        </div>
+        <hr />
+        <div class="summary-row highlight">
+          <span>Estimated Guaranteed Surrender Value (GSV):</span>
+          <strong id="gsvValue">₹0</strong>
+        </div>
+        <p class="note">
+          This is an approximate educational estimate based on a simple
+          formula: <code>Total Premiums Paid × (Years Paid / PPT)</code>.
+          Actual surrender value depends on the insurer's rules.
+        </p>
+      </div>
+    </section>
+
+    <!-- 🔹 OPTIONAL: IMAGE PREVIEW SAME AS YOUR SCREENSHOT -->
+    <section class="image-preview-section">
+      <h2>Calculator Preview (Screenshot)</h2>
+      <p>
+        Below is a static preview image of the LIC-style surrender value
+        calculator layout:
+      </p>
+      <img
+        src="images/calculator-preview.jpg"
+        alt="YLIC Policy Surrender Value Calculator Screenshot Preview"
+        class="preview-image"
+      />
+    </section>
+
+    <!-- SIMPLE FOOTER -->
+    <footer class="page-footer">
+      <p>
+        Need a live LIC-style calculator? Try:
+        <a href="https://calculatordekho.com/lic-policy-surrender-value-calculator/" target="_blank" rel="noopener">
+          LIC Policy Surrender Value Calculator
+        </a>
+      </p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
