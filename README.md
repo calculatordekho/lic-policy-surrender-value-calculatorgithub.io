@@ -1,4 +1,4 @@
-# YLIC Policy Surrender Value Calculator
+# LIC Policy Surrender Value Calculator
 
 Live working calculator built with HTML, CSS and JavaScript.
 
